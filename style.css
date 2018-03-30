@@ -1,0 +1,62 @@
+/*
+  Centrera site-logo med navbar.
+  Höjden på .site-header h1 är =  line-height (40) + paddning (10 + 10), i detta fall 60.
+  Höjden på .site-nav är: line-height (16) + paddning (22 + 22), i detta fall 60.
+  Default line-height är ca 1.2 (fonst-size 20 * 1.2 = line-height 24)
+  Läs mer om default line-height: https://developer.mozilla.org/en-US/docs/Web/CSS/line-height
+
+*/
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: sans-serif;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.container {
+  background: #333;
+}
+.site-header {
+  margin: 0 auto;
+  width: 50%;
+  /* background: pink; */
+}
+.site-header h1{
+  float: left;
+  padding: 10px 0;
+  line-height: 40px;
+  color: #fff;
+
+}
+.site-menu {
+  float: right;
+}
+.site-menu ul{
+  list-style: none;
+}
+.site-menu ul li {
+  float: left;
+}
+.site-menu a {
+  display: block;
+  padding: 22px;
+  line-height: 16px;
+  color: #fff;
+  text-decoration: none;
+}
+.site-menu a:hover {
+  background: #1B9CFC;
+  transition: all 0.4s ease 0s;
+}
