@@ -1,7 +1,7 @@
 /*
   Centrera site-logo med navbar.
-  Höjden på .site-header h1 är =  line-height (40) + paddning (10 + 10), i detta fall 60.
-  Höjden på .site-nav är: line-height (16) + paddning (22 + 22), i detta fall 60.
+  Höjden på .site-header h1 = line-height (40) + paddning (10 + 10), i detta fall 60.
+  Höjden på .site-nav = line-height (16) + paddning (22 + 22), i detta fall 60.
   Default line-height är ca 1.2 (fonst-size 20 * 1.2 = line-height 24)
   Läs mer om default line-height: https://developer.mozilla.org/en-US/docs/Web/CSS/line-height
 
