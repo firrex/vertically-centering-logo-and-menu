@@ -18,6 +18,9 @@ html {
 body {
   font-family: sans-serif;
 }
+ul {
+  list-style: none;
+}
 .clearfix:after {
   content: "";
   display: table;
@@ -29,7 +32,6 @@ body {
 .site-header {
   margin: 0 auto;
   width: 50%;
-  /* background: pink; */
 }
 .site-header h1{
   float: left;
@@ -40,9 +42,6 @@ body {
 }
 .site-menu {
   float: right;
-}
-.site-menu ul{
-  list-style: none;
 }
 .site-menu ul li {
   float: left;
@@ -55,6 +54,37 @@ body {
   text-decoration: none;
 }
 .site-menu a:hover {
+  background: #1B9CFC;
+  transition: all 0.4s ease 0s;
+}
+
+/*
+With Flexbox*-------------------*/
+.fb-site-header {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+}
+.fb-site-header h1{
+  line-height: 40px;
+  color: #fff;
+}
+.fb-site-menu {
+
+}
+.fb-site-menu ul {
+  display: flex;
+}
+.fb-site-menu a {
+  display: block;
+  padding: 22px;
+  line-height: 16px;
+  color: #fff;
+  text-decoration: none;
+}
+.fb-site-menu a:hover {
   background: #1B9CFC;
   transition: all 0.4s ease 0s;
 }
