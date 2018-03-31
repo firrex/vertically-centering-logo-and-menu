@@ -5,9 +5,11 @@
   Default line-height är ca 1.2 (fonst-size 20 * 1.2 = line-height 24)
   Läs mer om default line-height: https://developer.mozilla.org/en-US/docs/Web/CSS/line-height
 */
+
 html {
   box-sizing: border-box;
 }
+
 *,
 *:before,
 *:after {
@@ -15,37 +17,48 @@ html {
   margin: 0;
   padding: 0;
 }
+
 body {
   font-family: sans-serif;
 }
+
 ul {
   list-style: none;
 }
+
 .clearfix:after {
   content: "";
   display: table;
   clear: both;
 }
+
 .container {
+  padding: 0 20px;
   background: #000;
 }
+
 .site-header {
   margin: 0 auto;
-  width: 50%;
+  width: 700px;
+  min-width: 40%;
 }
-.site-header h1{
+
+.site-header h1 {
   float: left;
   padding: 10px 0;
   line-height: 40px;
   color: #fff;
 
 }
+
 .site-menu {
   float: right;
 }
+
 .site-menu ul li {
   float: left;
 }
+
 .site-menu a {
   display: block;
   padding: 22px;
@@ -53,6 +66,7 @@ ul {
   color: #fff;
   text-decoration: none;
 }
+
 .site-menu a:hover {
   background: #1B9CFC;
   transition: all 0.4s ease 0s;
@@ -60,20 +74,24 @@ ul {
 
 /*
 With Flexbox -------------------*/
+
 .fb-site-header {
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 50%;
+  width: 700px;
 }
-.fb-site-header h1{
+
+.fb-site-header h1 {
   line-height: 40px;
   color: #fff;
 }
+
 .fb-site-menu ul {
   display: flex;
 }
+
 .fb-site-menu a {
   display: block;
   padding: 22px;
@@ -81,6 +99,7 @@ With Flexbox -------------------*/
   color: #fff;
   text-decoration: none;
 }
+
 .fb-site-menu a:hover {
   background: #1B9CFC;
   transition: all 0.4s ease 0s;
