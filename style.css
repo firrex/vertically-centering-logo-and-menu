@@ -59,7 +59,7 @@ ul {
 }
 
 /*
-With Flexbox*-------------------*/
+With Flexbox -------------------*/
 .fb-site-header {
   margin: 0 auto;
   display: flex;
@@ -70,9 +70,6 @@ With Flexbox*-------------------*/
 .fb-site-header h1{
   line-height: 40px;
   color: #fff;
-}
-.fb-site-menu {
-
 }
 .fb-site-menu ul {
   display: flex;
